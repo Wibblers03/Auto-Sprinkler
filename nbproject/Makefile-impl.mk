@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=micro_MAC_final_project_v001.X
+PROJECTNAME=Auto-Sprinkler.X
 
 # Active Configuration
 DEFAULTCONF=default
