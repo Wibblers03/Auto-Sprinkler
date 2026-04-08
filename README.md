@@ -1,4 +1,4 @@
-#45mic - Auto-Sprinkler
+#Auto-Sprinkler
 
 This is the firmware for the **Auto-Sprinkler** project. It controls a soil moisture sensing and pumping system using a PIC microcontroller.
 
