@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=mcc_generated_files/interrupt_manager.c mcc_generated_files/clock.c mcc_generated_files/traps.c mcc_generated_files/pin_manager.c mcc_generated_files/system.c mcc_generated_files/where_was_i.s mcc_generated_files/mcc.c asmLib.s lcdLib.c main.c pumpLib.c soilSensorLib.c
+SOURCEFILES_QUOTED_IF_SPACED=mcc_generated_files/interrupt_manager.c mcc_generated_files/clock.c mcc_generated_files/traps.c mcc_generated_files/pin_manager.c mcc_generated_files/system.c mcc_generated_files/where_was_i.s mcc_generated_files/mcc.c src/asmLib.s src/lcdLib.c src/main.c src/pumpLib.c src/soilSensorLib.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/mcc_generated_files/interrupt_manager.o ${OBJECTDIR}/mcc_generated_files/clock.o ${OBJECTDIR}/mcc_generated_files/traps.o ${OBJECTDIR}/mcc_generated_files/pin_manager.o ${OBJECTDIR}/mcc_generated_files/system.o ${OBJECTDIR}/mcc_generated_files/where_was_i.o ${OBJECTDIR}/mcc_generated_files/mcc.o ${OBJECTDIR}/asmLib.o ${OBJECTDIR}/lcdLib.o ${OBJECTDIR}/main.o ${OBJECTDIR}/pumpLib.o ${OBJECTDIR}/soilSensorLib.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/mcc_generated_files/interrupt_manager.o.d ${OBJECTDIR}/mcc_generated_files/clock.o.d ${OBJECTDIR}/mcc_generated_files/traps.o.d ${OBJECTDIR}/mcc_generated_files/pin_manager.o.d ${OBJECTDIR}/mcc_generated_files/system.o.d ${OBJECTDIR}/mcc_generated_files/where_was_i.o.d ${OBJECTDIR}/mcc_generated_files/mcc.o.d ${OBJECTDIR}/asmLib.o.d ${OBJECTDIR}/lcdLib.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/pumpLib.o.d ${OBJECTDIR}/soilSensorLib.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/mcc_generated_files/interrupt_manager.o ${OBJECTDIR}/mcc_generated_files/clock.o ${OBJECTDIR}/mcc_generated_files/traps.o ${OBJECTDIR}/mcc_generated_files/pin_manager.o ${OBJECTDIR}/mcc_generated_files/system.o ${OBJECTDIR}/mcc_generated_files/where_was_i.o ${OBJECTDIR}/mcc_generated_files/mcc.o ${OBJECTDIR}/src/asmLib.o ${OBJECTDIR}/src/lcdLib.o ${OBJECTDIR}/src/main.o ${OBJECTDIR}/src/pumpLib.o ${OBJECTDIR}/src/soilSensorLib.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/mcc_generated_files/interrupt_manager.o.d ${OBJECTDIR}/mcc_generated_files/clock.o.d ${OBJECTDIR}/mcc_generated_files/traps.o.d ${OBJECTDIR}/mcc_generated_files/pin_manager.o.d ${OBJECTDIR}/mcc_generated_files/system.o.d ${OBJECTDIR}/mcc_generated_files/where_was_i.o.d ${OBJECTDIR}/mcc_generated_files/mcc.o.d ${OBJECTDIR}/src/asmLib.o.d ${OBJECTDIR}/src/lcdLib.o.d ${OBJECTDIR}/src/main.o.d ${OBJECTDIR}/src/pumpLib.o.d ${OBJECTDIR}/src/soilSensorLib.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/mcc_generated_files/interrupt_manager.o ${OBJECTDIR}/mcc_generated_files/clock.o ${OBJECTDIR}/mcc_generated_files/traps.o ${OBJECTDIR}/mcc_generated_files/pin_manager.o ${OBJECTDIR}/mcc_generated_files/system.o ${OBJECTDIR}/mcc_generated_files/where_was_i.o ${OBJECTDIR}/mcc_generated_files/mcc.o ${OBJECTDIR}/asmLib.o ${OBJECTDIR}/lcdLib.o ${OBJECTDIR}/main.o ${OBJECTDIR}/pumpLib.o ${OBJECTDIR}/soilSensorLib.o
+OBJECTFILES=${OBJECTDIR}/mcc_generated_files/interrupt_manager.o ${OBJECTDIR}/mcc_generated_files/clock.o ${OBJECTDIR}/mcc_generated_files/traps.o ${OBJECTDIR}/mcc_generated_files/pin_manager.o ${OBJECTDIR}/mcc_generated_files/system.o ${OBJECTDIR}/mcc_generated_files/where_was_i.o ${OBJECTDIR}/mcc_generated_files/mcc.o ${OBJECTDIR}/src/asmLib.o ${OBJECTDIR}/src/lcdLib.o ${OBJECTDIR}/src/main.o ${OBJECTDIR}/src/pumpLib.o ${OBJECTDIR}/src/soilSensorLib.o
 
 # Source Files
-SOURCEFILES=mcc_generated_files/interrupt_manager.c mcc_generated_files/clock.c mcc_generated_files/traps.c mcc_generated_files/pin_manager.c mcc_generated_files/system.c mcc_generated_files/where_was_i.s mcc_generated_files/mcc.c asmLib.s lcdLib.c main.c pumpLib.c soilSensorLib.c
+SOURCEFILES=mcc_generated_files/interrupt_manager.c mcc_generated_files/clock.c mcc_generated_files/traps.c mcc_generated_files/pin_manager.c mcc_generated_files/system.c mcc_generated_files/where_was_i.s mcc_generated_files/mcc.c src/asmLib.s src/lcdLib.c src/main.c src/pumpLib.c src/soilSensorLib.c
 
 
 
@@ -125,29 +125,29 @@ ${OBJECTDIR}/mcc_generated_files/mcc.o: mcc_generated_files/mcc.c  .generated_fi
 	@${RM} ${OBJECTDIR}/mcc_generated_files/mcc.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/mcc.c  -o ${OBJECTDIR}/mcc_generated_files/mcc.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/mcc.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off   
 	
-${OBJECTDIR}/lcdLib.o: lcdLib.c  .generated_files/flags/default/b36bbab3bbf019f59113968ba8745ff6e35cf328 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/lcdLib.o.d 
-	@${RM} ${OBJECTDIR}/lcdLib.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  lcdLib.c  -o ${OBJECTDIR}/lcdLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/lcdLib.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off   
+${OBJECTDIR}/src/lcdLib.o: src/lcdLib.c  .generated_files/flags/default/91472e824779e8dc01998130750ec7105c57f87f .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/src" 
+	@${RM} ${OBJECTDIR}/src/lcdLib.o.d 
+	@${RM} ${OBJECTDIR}/src/lcdLib.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  src/lcdLib.c  -o ${OBJECTDIR}/src/lcdLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/src/lcdLib.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off   
 	
-${OBJECTDIR}/main.o: main.c  .generated_files/flags/default/21be22f503829532be1eabb1f5fc18efdd2f281a .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/main.o.d 
-	@${RM} ${OBJECTDIR}/main.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  main.c  -o ${OBJECTDIR}/main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/main.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off   
+${OBJECTDIR}/src/main.o: src/main.c  .generated_files/flags/default/35a870502c2f0a46e6f6592780b0991132d679be .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/src" 
+	@${RM} ${OBJECTDIR}/src/main.o.d 
+	@${RM} ${OBJECTDIR}/src/main.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  src/main.c  -o ${OBJECTDIR}/src/main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/src/main.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off   
 	
-${OBJECTDIR}/pumpLib.o: pumpLib.c  .generated_files/flags/default/4a27022d012d229978bd7f34607f639827ae5742 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/pumpLib.o.d 
-	@${RM} ${OBJECTDIR}/pumpLib.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  pumpLib.c  -o ${OBJECTDIR}/pumpLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/pumpLib.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off   
+${OBJECTDIR}/src/pumpLib.o: src/pumpLib.c  .generated_files/flags/default/9cf73a3b117cde06e8057dc4d4fe6a5aaa7956e .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/src" 
+	@${RM} ${OBJECTDIR}/src/pumpLib.o.d 
+	@${RM} ${OBJECTDIR}/src/pumpLib.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  src/pumpLib.c  -o ${OBJECTDIR}/src/pumpLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/src/pumpLib.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off   
 	
-${OBJECTDIR}/soilSensorLib.o: soilSensorLib.c  .generated_files/flags/default/1d6607024815c86de399793f1883abae2a72d59e .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/soilSensorLib.o.d 
-	@${RM} ${OBJECTDIR}/soilSensorLib.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  soilSensorLib.c  -o ${OBJECTDIR}/soilSensorLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/soilSensorLib.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off   
+${OBJECTDIR}/src/soilSensorLib.o: src/soilSensorLib.c  .generated_files/flags/default/a27c6e59f5da29ac39bff8b2cbe6c6c6470f1be .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/src" 
+	@${RM} ${OBJECTDIR}/src/soilSensorLib.o.d 
+	@${RM} ${OBJECTDIR}/src/soilSensorLib.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  src/soilSensorLib.c  -o ${OBJECTDIR}/src/soilSensorLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/src/soilSensorLib.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off   
 	
 else
 ${OBJECTDIR}/mcc_generated_files/interrupt_manager.o: mcc_generated_files/interrupt_manager.c  .generated_files/flags/default/c7711f50f7ac2e99859adcdf184d8bbd3f092365 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
@@ -186,29 +186,29 @@ ${OBJECTDIR}/mcc_generated_files/mcc.o: mcc_generated_files/mcc.c  .generated_fi
 	@${RM} ${OBJECTDIR}/mcc_generated_files/mcc.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  mcc_generated_files/mcc.c  -o ${OBJECTDIR}/mcc_generated_files/mcc.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/mcc_generated_files/mcc.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off   
 	
-${OBJECTDIR}/lcdLib.o: lcdLib.c  .generated_files/flags/default/2a39f2af53446334a794b8e3b8c251905a707ffa .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/lcdLib.o.d 
-	@${RM} ${OBJECTDIR}/lcdLib.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  lcdLib.c  -o ${OBJECTDIR}/lcdLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/lcdLib.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off   
+${OBJECTDIR}/src/lcdLib.o: src/lcdLib.c  .generated_files/flags/default/d7d2c0d5fbb0fc5740857dc218df580865dd743 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/src" 
+	@${RM} ${OBJECTDIR}/src/lcdLib.o.d 
+	@${RM} ${OBJECTDIR}/src/lcdLib.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  src/lcdLib.c  -o ${OBJECTDIR}/src/lcdLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/src/lcdLib.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off   
 	
-${OBJECTDIR}/main.o: main.c  .generated_files/flags/default/9aa49d7fcd91658a3979d0834997d17e9f4d450a .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/main.o.d 
-	@${RM} ${OBJECTDIR}/main.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  main.c  -o ${OBJECTDIR}/main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/main.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off   
+${OBJECTDIR}/src/main.o: src/main.c  .generated_files/flags/default/cbbdd911c0b8b5820b5020de2dba159b5b8503cc .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/src" 
+	@${RM} ${OBJECTDIR}/src/main.o.d 
+	@${RM} ${OBJECTDIR}/src/main.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  src/main.c  -o ${OBJECTDIR}/src/main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/src/main.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off   
 	
-${OBJECTDIR}/pumpLib.o: pumpLib.c  .generated_files/flags/default/15548bca7769ef901a114f9a9ea353c314afc8e1 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/pumpLib.o.d 
-	@${RM} ${OBJECTDIR}/pumpLib.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  pumpLib.c  -o ${OBJECTDIR}/pumpLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/pumpLib.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off   
+${OBJECTDIR}/src/pumpLib.o: src/pumpLib.c  .generated_files/flags/default/9da470df96ad7ed6bf98aeb1ae6d3d3dcfdf8942 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/src" 
+	@${RM} ${OBJECTDIR}/src/pumpLib.o.d 
+	@${RM} ${OBJECTDIR}/src/pumpLib.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  src/pumpLib.c  -o ${OBJECTDIR}/src/pumpLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/src/pumpLib.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off   
 	
-${OBJECTDIR}/soilSensorLib.o: soilSensorLib.c  .generated_files/flags/default/76d82856b1c883b88b7075f4a7029b5171cc5321 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/soilSensorLib.o.d 
-	@${RM} ${OBJECTDIR}/soilSensorLib.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  soilSensorLib.c  -o ${OBJECTDIR}/soilSensorLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/soilSensorLib.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off   
+${OBJECTDIR}/src/soilSensorLib.o: src/soilSensorLib.c  .generated_files/flags/default/30c9561b01bca54330e806ccd85b1cc47903d220 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/src" 
+	@${RM} ${OBJECTDIR}/src/soilSensorLib.o.d 
+	@${RM} ${OBJECTDIR}/src/soilSensorLib.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  src/soilSensorLib.c  -o ${OBJECTDIR}/src/soilSensorLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/src/soilSensorLib.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off   
 	
 endif
 
@@ -221,11 +221,11 @@ ${OBJECTDIR}/mcc_generated_files/where_was_i.o: mcc_generated_files/where_was_i.
 	@${RM} ${OBJECTDIR}/mcc_generated_files/where_was_i.o 
 	${MP_CC} $(MP_EXTRA_AS_PRE)  mcc_generated_files/where_was_i.s  -o ${OBJECTDIR}/mcc_generated_files/where_was_i.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1  -omf=elf -DXPRJ_default=$(CND_CONF)    -Wa,-MD,"${OBJECTDIR}/mcc_generated_files/where_was_i.o.d",--defsym=__MPLAB_BUILD=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_SIMULATOR=1,-g,--no-relax$(MP_EXTRA_AS_POST) 
 	
-${OBJECTDIR}/asmLib.o: asmLib.s  .generated_files/flags/default/2659f8dfc0915c24ac292ebf4d5541153ea6f0cc .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/asmLib.o.d 
-	@${RM} ${OBJECTDIR}/asmLib.o 
-	${MP_CC} $(MP_EXTRA_AS_PRE)  asmLib.s  -o ${OBJECTDIR}/asmLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1  -omf=elf -DXPRJ_default=$(CND_CONF)    -Wa,-MD,"${OBJECTDIR}/asmLib.o.d",--defsym=__MPLAB_BUILD=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_SIMULATOR=1,-g,--no-relax$(MP_EXTRA_AS_POST) 
+${OBJECTDIR}/src/asmLib.o: src/asmLib.s  .generated_files/flags/default/79c875b4ff792a6d92e92ba049c07940fb8d748e .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/src" 
+	@${RM} ${OBJECTDIR}/src/asmLib.o.d 
+	@${RM} ${OBJECTDIR}/src/asmLib.o 
+	${MP_CC} $(MP_EXTRA_AS_PRE)  src/asmLib.s  -o ${OBJECTDIR}/src/asmLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1  -omf=elf -DXPRJ_default=$(CND_CONF)    -Wa,-MD,"${OBJECTDIR}/src/asmLib.o.d",--defsym=__MPLAB_BUILD=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_SIMULATOR=1,-g,--no-relax$(MP_EXTRA_AS_POST) 
 	
 else
 ${OBJECTDIR}/mcc_generated_files/where_was_i.o: mcc_generated_files/where_was_i.s  .generated_files/flags/default/b44c217141130de6472da345d7adaa8de673840e .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
@@ -234,11 +234,11 @@ ${OBJECTDIR}/mcc_generated_files/where_was_i.o: mcc_generated_files/where_was_i.
 	@${RM} ${OBJECTDIR}/mcc_generated_files/where_was_i.o 
 	${MP_CC} $(MP_EXTRA_AS_PRE)  mcc_generated_files/where_was_i.s  -o ${OBJECTDIR}/mcc_generated_files/where_was_i.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -omf=elf -DXPRJ_default=$(CND_CONF)    -Wa,-MD,"${OBJECTDIR}/mcc_generated_files/where_was_i.o.d",--defsym=__MPLAB_BUILD=1,-g,--no-relax$(MP_EXTRA_AS_POST) 
 	
-${OBJECTDIR}/asmLib.o: asmLib.s  .generated_files/flags/default/3de112052ee22b88656a3d13249b257c41eb6e7e .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/asmLib.o.d 
-	@${RM} ${OBJECTDIR}/asmLib.o 
-	${MP_CC} $(MP_EXTRA_AS_PRE)  asmLib.s  -o ${OBJECTDIR}/asmLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -omf=elf -DXPRJ_default=$(CND_CONF)    -Wa,-MD,"${OBJECTDIR}/asmLib.o.d",--defsym=__MPLAB_BUILD=1,-g,--no-relax$(MP_EXTRA_AS_POST) 
+${OBJECTDIR}/src/asmLib.o: src/asmLib.s  .generated_files/flags/default/37cc8177ecbf731a58529c137317f5ce378e995 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+	@${MKDIR} "${OBJECTDIR}/src" 
+	@${RM} ${OBJECTDIR}/src/asmLib.o.d 
+	@${RM} ${OBJECTDIR}/src/asmLib.o 
+	${MP_CC} $(MP_EXTRA_AS_PRE)  src/asmLib.s  -o ${OBJECTDIR}/src/asmLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -omf=elf -DXPRJ_default=$(CND_CONF)    -Wa,-MD,"${OBJECTDIR}/src/asmLib.o.d",--defsym=__MPLAB_BUILD=1,-g,--no-relax$(MP_EXTRA_AS_POST) 
 	
 endif
 
@@ -275,3 +275,11 @@ endif
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${OBJECTDIR}
 	${RM} -r ${DISTDIR}
+
+# Enable dependency checking
+.dep.inc: .depcheck-impl
+
+DEPFILES=$(wildcard ${POSSIBLE_DEPFILES})
+ifneq (${DEPFILES},)
+include ${DEPFILES}
+endif
