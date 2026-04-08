@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Auto-Sprinkler.X
+PROJECTNAME=Auto-Sprinkler
 
 # Active Configuration
 DEFAULTCONF=default

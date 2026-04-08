@@ -6,5 +6,5 @@
 CND_BASEDIR=`pwd`
 # default configuration
 CND_ARTIFACT_DIR_default=dist/default/production
-CND_ARTIFACT_NAME_default=Auto-Sprinkler.X.production.hex
-CND_ARTIFACT_PATH_default=dist/default/production/Auto-Sprinkler.X.production.hex
+CND_ARTIFACT_NAME_default=Auto-Sprinkler.production.hex
+CND_ARTIFACT_PATH_default=dist/default/production/Auto-Sprinkler.production.hex
