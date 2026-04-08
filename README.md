@@ -19,9 +19,13 @@ This project uses **MCC Melody** for peripheral configuration.
 
 ##Hardware Requirments
 *PIC24FJ64GA002
+
 *_Display_
+
 *_Actuator_
+
 *_Power_
+
 *_Sensors_
 
 ##_Pinout Table_
