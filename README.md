@@ -17,7 +17,7 @@ This project uses **MCC Melody** for peripheral configuration.
 * **Compiler:** XC8 (for C files) and pic-as (for .s files)
 * **Configurator:** Microchip Code Configurator (MCC) - uses `micro_MAC_final_project_v001.mc3`
 
-##Hardware Requirments
+##Hardware Requirments  
  *uController: PIC24FJ64GA002  
  *_Display_  
  *_Actuator_  
