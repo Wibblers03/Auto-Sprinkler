@@ -6,8 +6,8 @@
 //Date: 04/03/2025
 
 #include "xc.h"
-#include "MAC_lcdLib_v1.h"
-#include "MAC_asmLib_v1.h"
+#include "lcdLib.h"
+#include "asmLib.h"
 #define CONTRAST 0x7A
 
 void lcd_init(void){

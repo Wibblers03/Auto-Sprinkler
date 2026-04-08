@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=MAC_main_v1.c MAC_lcdLib_v1.c MAC_asmLib_v1.s MAC_soilSensorLib.c MAC_pumpLib.c
+SOURCEFILES_QUOTED_IF_SPACED=asmLib.s lcdLib.c main.c pumpLib.c soilSensorLib.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/MAC_main_v1.o ${OBJECTDIR}/MAC_lcdLib_v1.o ${OBJECTDIR}/MAC_asmLib_v1.o ${OBJECTDIR}/MAC_soilSensorLib.o ${OBJECTDIR}/MAC_pumpLib.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/MAC_main_v1.o.d ${OBJECTDIR}/MAC_lcdLib_v1.o.d ${OBJECTDIR}/MAC_asmLib_v1.o.d ${OBJECTDIR}/MAC_soilSensorLib.o.d ${OBJECTDIR}/MAC_pumpLib.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/asmLib.o ${OBJECTDIR}/lcdLib.o ${OBJECTDIR}/main.o ${OBJECTDIR}/pumpLib.o ${OBJECTDIR}/soilSensorLib.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/asmLib.o.d ${OBJECTDIR}/lcdLib.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/pumpLib.o.d ${OBJECTDIR}/soilSensorLib.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/MAC_main_v1.o ${OBJECTDIR}/MAC_lcdLib_v1.o ${OBJECTDIR}/MAC_asmLib_v1.o ${OBJECTDIR}/MAC_soilSensorLib.o ${OBJECTDIR}/MAC_pumpLib.o
+OBJECTFILES=${OBJECTDIR}/asmLib.o ${OBJECTDIR}/lcdLib.o ${OBJECTDIR}/main.o ${OBJECTDIR}/pumpLib.o ${OBJECTDIR}/soilSensorLib.o
 
 # Source Files
-SOURCEFILES=MAC_main_v1.c MAC_lcdLib_v1.c MAC_asmLib_v1.s MAC_soilSensorLib.c MAC_pumpLib.c
+SOURCEFILES=asmLib.s lcdLib.c main.c pumpLib.c soilSensorLib.c
 
 
 
@@ -89,72 +89,72 @@ MP_LINKER_FILE_OPTION=,--script=p24FJ64GA002.gld
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/MAC_main_v1.o: MAC_main_v1.c  .generated_files/flags/default/7bcc4132c4e935448cc8bf32c4a7a96d3fb48e0a .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/lcdLib.o: lcdLib.c  .generated_files/flags/default/d19bf129a73f2bc8a4c99394680ca2399b8b4f4a .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/MAC_main_v1.o.d 
-	@${RM} ${OBJECTDIR}/MAC_main_v1.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  MAC_main_v1.c  -o ${OBJECTDIR}/MAC_main_v1.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/MAC_main_v1.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	@${RM} ${OBJECTDIR}/lcdLib.o.d 
+	@${RM} ${OBJECTDIR}/lcdLib.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  lcdLib.c  -o ${OBJECTDIR}/lcdLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/lcdLib.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/MAC_lcdLib_v1.o: MAC_lcdLib_v1.c  .generated_files/flags/default/19107dfc07d75f0a59c903937632109b5a22e095 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/main.o: main.c  .generated_files/flags/default/5b1ffb669ef73583ba48f85183ec0d8c7bc2b3b8 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/MAC_lcdLib_v1.o.d 
-	@${RM} ${OBJECTDIR}/MAC_lcdLib_v1.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  MAC_lcdLib_v1.c  -o ${OBJECTDIR}/MAC_lcdLib_v1.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/MAC_lcdLib_v1.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	@${RM} ${OBJECTDIR}/main.o.d 
+	@${RM} ${OBJECTDIR}/main.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  main.c  -o ${OBJECTDIR}/main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/main.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/MAC_soilSensorLib.o: MAC_soilSensorLib.c  .generated_files/flags/default/edbb45298cad8c6afbd7a883d663be6d2fa6985a .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/pumpLib.o: pumpLib.c  .generated_files/flags/default/a6678af36392b0c75205e74ca06c2d1763363857 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/MAC_soilSensorLib.o.d 
-	@${RM} ${OBJECTDIR}/MAC_soilSensorLib.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  MAC_soilSensorLib.c  -o ${OBJECTDIR}/MAC_soilSensorLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/MAC_soilSensorLib.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	@${RM} ${OBJECTDIR}/pumpLib.o.d 
+	@${RM} ${OBJECTDIR}/pumpLib.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  pumpLib.c  -o ${OBJECTDIR}/pumpLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/pumpLib.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/MAC_pumpLib.o: MAC_pumpLib.c  .generated_files/flags/default/346dbadc4e6b1b5e854aa39aee4cd19cfdee2338 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/soilSensorLib.o: soilSensorLib.c  .generated_files/flags/default/617a8fa1b9626dab9c1ea65c6fd7abb92f8252e .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/MAC_pumpLib.o.d 
-	@${RM} ${OBJECTDIR}/MAC_pumpLib.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  MAC_pumpLib.c  -o ${OBJECTDIR}/MAC_pumpLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/MAC_pumpLib.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	@${RM} ${OBJECTDIR}/soilSensorLib.o.d 
+	@${RM} ${OBJECTDIR}/soilSensorLib.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  soilSensorLib.c  -o ${OBJECTDIR}/soilSensorLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/soilSensorLib.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
 else
-${OBJECTDIR}/MAC_main_v1.o: MAC_main_v1.c  .generated_files/flags/default/f8aa26a38c6a4e0949d812f37f30d067b64c0ab8 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/lcdLib.o: lcdLib.c  .generated_files/flags/default/668f98591234cf592f5e5be58d956d7ddfb333aa .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/MAC_main_v1.o.d 
-	@${RM} ${OBJECTDIR}/MAC_main_v1.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  MAC_main_v1.c  -o ${OBJECTDIR}/MAC_main_v1.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/MAC_main_v1.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	@${RM} ${OBJECTDIR}/lcdLib.o.d 
+	@${RM} ${OBJECTDIR}/lcdLib.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  lcdLib.c  -o ${OBJECTDIR}/lcdLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/lcdLib.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/MAC_lcdLib_v1.o: MAC_lcdLib_v1.c  .generated_files/flags/default/617425ea96c0bc0c4ec66e4fda2afba2feb7cc71 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/main.o: main.c  .generated_files/flags/default/9e32ed099f35acfa4fc7a25e924de631dc7c9041 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/MAC_lcdLib_v1.o.d 
-	@${RM} ${OBJECTDIR}/MAC_lcdLib_v1.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  MAC_lcdLib_v1.c  -o ${OBJECTDIR}/MAC_lcdLib_v1.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/MAC_lcdLib_v1.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	@${RM} ${OBJECTDIR}/main.o.d 
+	@${RM} ${OBJECTDIR}/main.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  main.c  -o ${OBJECTDIR}/main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/main.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/MAC_soilSensorLib.o: MAC_soilSensorLib.c  .generated_files/flags/default/c839c0470280d84c23853305fba33af44f87848f .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/pumpLib.o: pumpLib.c  .generated_files/flags/default/a9ba45f4b1e14ab91e724f73428bf08939a3e790 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/MAC_soilSensorLib.o.d 
-	@${RM} ${OBJECTDIR}/MAC_soilSensorLib.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  MAC_soilSensorLib.c  -o ${OBJECTDIR}/MAC_soilSensorLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/MAC_soilSensorLib.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	@${RM} ${OBJECTDIR}/pumpLib.o.d 
+	@${RM} ${OBJECTDIR}/pumpLib.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  pumpLib.c  -o ${OBJECTDIR}/pumpLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/pumpLib.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
-${OBJECTDIR}/MAC_pumpLib.o: MAC_pumpLib.c  .generated_files/flags/default/bf8c6fd7d68bb7b8f795519bcad4c4173c6d9c1 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/soilSensorLib.o: soilSensorLib.c  .generated_files/flags/default/a53f581aa8bd38fe3f70f255a1302ce78cc85278 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/MAC_pumpLib.o.d 
-	@${RM} ${OBJECTDIR}/MAC_pumpLib.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  MAC_pumpLib.c  -o ${OBJECTDIR}/MAC_pumpLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/MAC_pumpLib.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
+	@${RM} ${OBJECTDIR}/soilSensorLib.o.d 
+	@${RM} ${OBJECTDIR}/soilSensorLib.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  soilSensorLib.c  -o ${OBJECTDIR}/soilSensorLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/soilSensorLib.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)    $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off    -mdfp="${DFP_DIR}/xc16"
 	
 endif
 
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: assemble
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/MAC_asmLib_v1.o: MAC_asmLib_v1.s  .generated_files/flags/default/c249c3580f95253617e0ee5763f0a632796ef7f2 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/asmLib.o: asmLib.s  .generated_files/flags/default/42c4e4f53351cb1c8d756cd93a6398d2bb34ea95 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/MAC_asmLib_v1.o.d 
-	@${RM} ${OBJECTDIR}/MAC_asmLib_v1.o 
-	${MP_CC} $(MP_EXTRA_AS_PRE)  MAC_asmLib_v1.s  -o ${OBJECTDIR}/MAC_asmLib_v1.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1  -omf=elf -DXPRJ_default=$(CND_CONF)    -Wa,-MD,"${OBJECTDIR}/MAC_asmLib_v1.o.d",--defsym=__MPLAB_BUILD=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_SIMULATOR=1,-g,--no-relax$(MP_EXTRA_AS_POST)  -mdfp="${DFP_DIR}/xc16"
+	@${RM} ${OBJECTDIR}/asmLib.o.d 
+	@${RM} ${OBJECTDIR}/asmLib.o 
+	${MP_CC} $(MP_EXTRA_AS_PRE)  asmLib.s  -o ${OBJECTDIR}/asmLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1  -omf=elf -DXPRJ_default=$(CND_CONF)    -Wa,-MD,"${OBJECTDIR}/asmLib.o.d",--defsym=__MPLAB_BUILD=1,--defsym=__MPLAB_DEBUG=1,--defsym=__DEBUG=1,--defsym=__MPLAB_DEBUGGER_SIMULATOR=1,-g,--no-relax$(MP_EXTRA_AS_POST)  -mdfp="${DFP_DIR}/xc16"
 	
 else
-${OBJECTDIR}/MAC_asmLib_v1.o: MAC_asmLib_v1.s  .generated_files/flags/default/21a01ed4ba8744059a14dce3d0809e033fb2b2ff .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
+${OBJECTDIR}/asmLib.o: asmLib.s  .generated_files/flags/default/c5ff7adec41ab368b5b7acf7a812f859665586f3 .generated_files/flags/default/da39a3ee5e6b4b0d3255bfef95601890afd80709
 	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/MAC_asmLib_v1.o.d 
-	@${RM} ${OBJECTDIR}/MAC_asmLib_v1.o 
-	${MP_CC} $(MP_EXTRA_AS_PRE)  MAC_asmLib_v1.s  -o ${OBJECTDIR}/MAC_asmLib_v1.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -omf=elf -DXPRJ_default=$(CND_CONF)    -Wa,-MD,"${OBJECTDIR}/MAC_asmLib_v1.o.d",--defsym=__MPLAB_BUILD=1,-g,--no-relax$(MP_EXTRA_AS_POST)  -mdfp="${DFP_DIR}/xc16"
+	@${RM} ${OBJECTDIR}/asmLib.o.d 
+	@${RM} ${OBJECTDIR}/asmLib.o 
+	${MP_CC} $(MP_EXTRA_AS_PRE)  asmLib.s  -o ${OBJECTDIR}/asmLib.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -omf=elf -DXPRJ_default=$(CND_CONF)    -Wa,-MD,"${OBJECTDIR}/asmLib.o.d",--defsym=__MPLAB_BUILD=1,-g,--no-relax$(MP_EXTRA_AS_POST)  -mdfp="${DFP_DIR}/xc16"
 	
 endif
 

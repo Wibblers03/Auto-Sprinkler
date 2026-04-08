@@ -5,8 +5,8 @@
  * Created on April 23, 2025, 6:16 PM
  */
 
-#ifndef MAC_PUMPLIB_H
-#define	MAC_PUMPLIB_H
+#ifndef PUMPLIB_H
+#define	PUMPLIB_H
 
 #include "xc.h"
 
@@ -26,5 +26,5 @@ void turnOffPump (void);
 }
 #endif
 
-#endif	/* MAC_PUMPLIB_H */
+#endif	/* PUMPLIB_H */
 

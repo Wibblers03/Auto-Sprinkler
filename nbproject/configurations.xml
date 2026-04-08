@@ -4,10 +4,10 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
-      <itemPath>MAC_asmLib_v1.h</itemPath>
-      <itemPath>MAC_lcdLib_v1.h</itemPath>
-      <itemPath>MAC_pumpLib.h</itemPath>
-      <itemPath>MAC_soilSensorLib.h</itemPath>
+      <itemPath>asmLib.h</itemPath>
+      <itemPath>lcdLib.h</itemPath>
+      <itemPath>pumpLib.h</itemPath>
+      <itemPath>soilSensorLib.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -22,11 +22,11 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>MAC_main_v1.c</itemPath>
-      <itemPath>MAC_lcdLib_v1.c</itemPath>
-      <itemPath>MAC_asmLib_v1.s</itemPath>
-      <itemPath>MAC_soilSensorLib.c</itemPath>
-      <itemPath>MAC_pumpLib.c</itemPath>
+      <itemPath>asmLib.s</itemPath>
+      <itemPath>lcdLib.c</itemPath>
+      <itemPath>main.c</itemPath>
+      <itemPath>pumpLib.c</itemPath>
+      <itemPath>soilSensorLib.c</itemPath>
     </logicalFolder>
     <itemPath>.gitignore</itemPath>
     <itemPath>README.md</itemPath>

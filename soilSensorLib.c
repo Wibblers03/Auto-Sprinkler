@@ -5,7 +5,7 @@
  * Created on April 2 PM
  */
 #include "xc.h"
-#include "MAC_soilSensorLib.h"
+#include "soilSensorLib.h"
 #define BUF_SIZE 32
 #define NUMSAMPLES 0b01
 

@@ -6,7 +6,7 @@
  */
 
 #include "xc.h"
-#include "MAC_pumpLib.h"
+#include "pumpLib.h"
 
 void setupPump(void){
     TRISBbits.TRISB4 = 0;       //makes RB4 an output for water pump

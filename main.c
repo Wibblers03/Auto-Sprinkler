@@ -6,10 +6,10 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
-#include "MAC_asmLib_v1.h"
-#include "MAC_soilSensorLib.h"
-#include "MAC_lcdLib_v1.h"
-#include "MAC_pumpLib.h"
+#include "asmLib.h"
+#include "soilSensorLib.h"
+#include "lcdLib.h"
+#include "pumpLib.h"
 
 #define BUF_SIZE 32        //buffer size
 #define NUMSAMPLES 0b01     //numsamples can be 0b00, 0b01(16sp/s), 0b10(128sp/s) or 0b11

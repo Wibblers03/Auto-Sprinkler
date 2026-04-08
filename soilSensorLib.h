@@ -5,8 +5,8 @@
  * Created on April 23, 2025, 5:32 PM
  */
 
-#ifndef MAC_SOILSENSORLIB_H
-#define	MAC_SOILSENSORLIB_H
+#ifndef SOILSENSORLIB_H
+#define	SOILSENSORLIB_H
 
 #include "xc.h"
 
@@ -26,5 +26,5 @@ void putVal (int newValue);
 }
 #endif
 
-#endif	/* MAC_CIRCBUF_V1_H */
+#endif	/* SOILSENSORLIB_H */
 

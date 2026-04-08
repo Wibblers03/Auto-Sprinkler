@@ -5,8 +5,8 @@
  * Created on April 26th 2025
  */
 
-#ifndef MAC_LCDLIB__V1_H
-#define	MAC_LCDLIB__V1_H
+#ifndef LCDLIB_H
+#define	LCDLIB_H
 
 #include "xc.h"
 
@@ -29,5 +29,5 @@ void lcd_printStr(const char * string, int stringLen);
 }
 #endif
 
-#endif	/* MAC_LCDLIB__V1_H */
+#endif	/* LCDLIB_H */
 

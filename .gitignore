@@ -1,8 +1,9 @@
-#MPLAB X Generated folders  
+#MPLAB X Generated folders
 build/
 dist/
 disassembly/
 debug/
+default/
 
 #Local IDE settings (The "Private" folder)
 nbproject/private/
