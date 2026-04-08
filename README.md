@@ -1,4 +1,4 @@
-#45mic - Micro MAC Final Project
+#45mic - Micro MAC Final Projec
 
 This is the firmware for the **Micro MAC** project. It controls a soil sensing and pumping system using a PIC microcontroller.
 
