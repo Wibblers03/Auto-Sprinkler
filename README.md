@@ -18,14 +18,10 @@ This project uses **MCC Melody** for peripheral configuration.
 * **Configurator:** Microchip Code Configurator (MCC) - uses `micro_MAC_final_project_v001.mc3`
 
 ##Hardware Requirments
-*PIC24FJ64GA002
-
+*uController: PIC24FJ64GA002
 *_Display_
-
 *_Actuator_
-
 *_Power_
-
 *_Sensors_
 
 ##_Pinout Table_
