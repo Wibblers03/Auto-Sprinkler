@@ -1,0 +1,19 @@
+#MPLAB X Generated folders
+build/
+dist/
+disassembly/
+debug/
+
+#Local IDE settings (The "Private" folder)
+nbproject/private/
+
+#OS generated files
+.DS_Store
+Thumbs.db
+
+#Backup files
+*.bak
+
+#Log files
+*.log
+*.log.inx
