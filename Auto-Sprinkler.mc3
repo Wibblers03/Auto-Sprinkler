@@ -3859,5 +3859,62 @@
          <value>disabled</value>
       </entry>
    </tokenMap>
-   <generatedFileHashHistoryMap class="java.util.TreeMap"/>
+   <generatedFileHashHistoryMap class="java.util.TreeMap">
+      <entry>
+         <file>main.c</file>
+         <hash>c76d7b6e24d88b4f774d7faffadf7f4da48970cc2245f91fda012a7d09396d58</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\clock.c</file>
+         <hash>bc9a1b04627c8eb55ca02b8957a01c836a1f3da237cff9893ea74ce264bc3e5d</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\clock.h</file>
+         <hash>2a67a0ba04a2c06c9e3d63e558b06acad5d26f12d3961ce853f523e72be4498f</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\interrupt_manager.c</file>
+         <hash>2bba777d30fd7d3b47f4ffcf6cb3da7203f7a2f91325872c5f7f6fc103ba4bf0</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\interrupt_manager.h</file>
+         <hash>fc7fa4002102ecad35d46946bb5afe96afbf9840b26c48a812182721788b95d5</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\mcc.c</file>
+         <hash>c9cc9aac5a673d9ecf3bf0c9aec0e6c701537c53fe755be75c2fa8eb7687b095</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\mcc.h</file>
+         <hash>061e9bd0f0f70782631bdd76d51d14e56bf82c92da158b36c694dc86a877298a</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.c</file>
+         <hash>075574e7f3fffc87cf875e58bb70206e28fb317ebfe35b0741c0f5bcc3b9119f</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.h</file>
+         <hash>9055e093554acf6722578691254997d84448904ab90bdb7130ef676d7caaf61b</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system.c</file>
+         <hash>76a9b1a95d9c93e8d870573536a77da85a495d0d9ce1be15a69d60c8fa8b326d</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\system.h</file>
+         <hash>b06d51e0e99652d53ba9bd95a0a3df0661eb9f0075e9e4ea285627e0680efc12</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\traps.c</file>
+         <hash>c0eaa5b2dbffd056c7605384b4e0ac87d89b071032bf27a5016c03cc54f5b3eb</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\traps.h</file>
+         <hash>6311b08afe999de842c73ef687fb2f644a83387d11d601aa585bf7d842763007</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\where_was_i.s</file>
+         <hash>275918c3e3222db4bb4381c752b6e568485d2b0e5894f3892d28dc0fb5928b8c</hash>
+      </entry>
+   </generatedFileHashHistoryMap>
 </config>
