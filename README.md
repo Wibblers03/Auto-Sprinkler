@@ -1,21 +1,30 @@
-#45mic - Micro MAC Final Project
+#45mic - Auto-Sprinkler
 
-This is the firmware for the **Micro MAC** project. It controls a soil sensing and pumping system using a PIC microcontroller.
+This is the firmware for the **Auto-Sprinkler** project. It controls a soil moisture sensing and pumping system using a PIC microcontroller.
 
 ##Project Components
 This project uses **MCC Melody** for peripheral configuration.
 
-* **Main Logic:** `MAC_main_v1.c`
+* **Main Logic:** `main.c`
 * **Peripherals / Modules:**
-  * `MAC_soilSensorLib`: ADC and soil moisture logic.
-  * `MAC_pumpLib`: Relay/Pump control logic.
-  * `MAC_lcdLib`: Display interface.
-  * `MAC_asmLib_v1.s`: Low-level Assembly optimizations/functions.
+  * `soilSensorLib.c`: ADC and soil moisture logic.
+  * `pumpLib.c`: Relay/Pump control logic.
+  * `lcdLib.c`: Display interface.
+  * `asmLib.s`: Low-level Assembly optimizations/functions.
 
 ##Software Requirements
 * **IDE:** MPLAB X IDE (v6.xx or newer)
 * **Compiler:** XC8 (for C files) and pic-as (for .s files)
 * **Configurator:** Microchip Code Configurator (MCC) - uses `micro_MAC_final_project_v001.mc3`
+
+##Hardware Requirments
+*PIC24FJ64GA002
+*_Display_
+*_Actuator_
+*_Power_
+*_Sensors_
+
+##_Pinout Table_
 
 ##Getting Started
 1. Clone this repository to your local machine.
